@@ -1,6 +1,8 @@
 <label for="" id="lab">Name:-</label>
 <input type="text" [(ngModel)]="name" [class]="myCLass" [id]="varrrr"  [attr.loc]="myCLass">
+
+<input type="text" [attr.pok]="name">
 <br>
-<span class="cscs">
+<span [class]="cscs"  >
   {{name}}
 </span>

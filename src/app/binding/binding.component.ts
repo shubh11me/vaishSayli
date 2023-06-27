@@ -12,7 +12,7 @@ myCLass="op";
   givver(){
     console.log("Heyyy")
   }
-
+  cscs="aaaaaaa"
   varrrr="scsc"
 
 

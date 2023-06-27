@@ -1,0 +1,18 @@
+
+<!-- <p *ngFor="let n of myarr">{{n}}</p> -->
+<div class="card" style="width: 18rem;" *ngFor="let element of box">
+  <div class="card-body">
+    <h5 class="card-title">{{element.name}}</h5>
+    <p class="card-text">{{element.age}}</p>
+    <p>
+      My Food are {{element.food}}
+    </p>
+
+    <p>
+      My Hobbies are <span *ngFor="let h of element.hobbies">
+{{h.hobbi_name}}
+      </span>
+    </p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>

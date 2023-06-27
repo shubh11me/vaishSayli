@@ -8,6 +8,7 @@ import { BindingComponent } from './binding/binding.component';
 import { FormsModule } from '@angular/forms';
 import { NgiffComponent } from './ngiff/ngiff.component';
 import { HomeComponent } from './home/home.component';
+import { NgforrComponent } from './ngforr/ngforr.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { HomeComponent } from './home/home.component';
     NavbarComponent,
     BindingComponent,
     NgiffComponent,
-    HomeComponent
+    HomeComponent,
+    NgforrComponent
   ],
   imports: [
     BrowserModule,

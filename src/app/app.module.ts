@@ -10,6 +10,9 @@ import { NgiffComponent } from './ngiff/ngiff.component';
 import { HomeComponent } from './home/home.component';
 import { NgforrComponent } from './ngforr/ngforr.component';
 import { FormsComponent } from './forms/forms.component';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
+import { CardComponent } from './card/card.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +22,10 @@ import { FormsComponent } from './forms/forms.component';
     NgiffComponent,
     HomeComponent,
     NgforrComponent,
-    FormsComponent
+    FormsComponent,
+    ParentComponent,
+    ChildComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,16 @@
+<div class="card" style="width: 18rem;" >
+  <div class="card-body">
+    <h5 class="card-title">{{name}}</h5>
+    <p class="card-text">{{age}}</p>
+    <p>
+      My Food are {{food}}
+    </p>
+
+    <p>
+      My Hobbies are <span *ngFor="let h of hobbies">
+{{h.hobbi_name}}
+      </span>
+    </p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>

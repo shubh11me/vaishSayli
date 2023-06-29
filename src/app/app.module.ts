@@ -5,10 +5,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { BindingComponent } from './binding/binding.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgiffComponent } from './ngiff/ngiff.component';
 import { HomeComponent } from './home/home.component';
 import { NgforrComponent } from './ngforr/ngforr.component';
+import { FormsComponent } from './forms/forms.component';
 
 @NgModule({
   declarations: [
@@ -17,12 +18,15 @@ import { NgforrComponent } from './ngforr/ngforr.component';
     BindingComponent,
     NgiffComponent,
     HomeComponent,
-    NgforrComponent
+    NgforrComponent,
+    FormsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

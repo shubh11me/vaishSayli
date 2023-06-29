@@ -1,0 +1,43 @@
+<form [formGroup]="formmmmm" (ngSubmit)="submitFormmm()">
+  <label for="">Event Name</label>
+  <input formControlName="ename" type="text" name="" id="">
+  <span style="color: red;"
+    *ngIf="this.formmmmm.controls['ename'].value=='' && this.formmmmm.controls['ename'].touched">
+    Please Enter the name its required
+  </span>
+  <br>
+  <label for="">Event Date</label>
+  <input formControlName="edate" type="datetime" name="" id="">
+  <span style="color: red;"
+    *ngIf="this.formmmmm.controls['edate'].value==''  && this.formmmmm.controls['ename'].touched ">
+    Please Enter the Date its required
+  </span>
+  <br>
+  <label for="">Event Category</label>
+  <input formControlName="ecat" type="text" name="" id="">
+  <br>
+  <label for="">Event Type</label>
+  <select #s (change)="changetype()" formControlName="etype" name="" id="">
+    <option value="">Select type</option>
+    <option value="online">Online</option>
+    <option value="offline">Offline</option>
+  </select>
+
+  <br>
+  <div *ngIf="s.value=='online'">
+    <label for="">Event Link</label>
+    <input formControlName="elink" type="text" name="" id="">
+  </div>
+  <span style="color: red;"
+  *ngIf="this.formmmmm.controls['elink'].value==''  && this.formmmmm.controls['elink'].touched ">
+  Please Enter the Url its required
+</span>
+
+<span style="color: red;"
+  *ngIf="this.formmmmm.controls['elink'].errors?.['pattern']  && this.formmmmm.controls['elink'].touched ">
+  Please Enter the Url  Pattern not matching
+</span>
+  <br>
+
+  <button type="submit">Sub</button>
+</form>

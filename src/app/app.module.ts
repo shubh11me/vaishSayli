@@ -13,6 +13,8 @@ import { FormsComponent } from './forms/forms.component';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
 import { CardComponent } from './card/card.component';
+import { TodosComponent } from './todos/todos.component';
+import { TodocardComponent } from './todocard/todocard.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { CardComponent } from './card/card.component';
     FormsComponent,
     ParentComponent,
     ChildComponent,
-    CardComponent
+    CardComponent,
+    TodosComponent,
+    TodocardComponent
   ],
   imports: [
     BrowserModule,

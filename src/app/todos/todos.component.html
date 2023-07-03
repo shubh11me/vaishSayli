@@ -1,0 +1,16 @@
+<label for="">Todo</label>
+<input type="text" [(ngModel)]="msg">
+<br>
+<label for="">Desc</label>
+<textarea type="text" [(ngModel)]="desc"> </textarea> <br>
+<button (click)="addTodo()" class="btn btn-primary">Add</button>
+
+<!-- <div *ngFor="let to of todo">
+  <p>Todo is:- {{to.msg}}</p>
+  <p>Todo desc is:- {{to.dsc}}</p>
+  <hr>
+</div> -->
+
+<app-todocard (delSend)="deleteTodod($event)" [dsc]="to.dsc" [msg]="to.msg" [ind]="ind" *ngFor="let to of todo;let ind=index"></app-todocard>
+
+<!-- <button (click)="deleteTodod(3)">Temp dele</button> -->

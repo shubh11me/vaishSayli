@@ -7,12 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NgforrComponent implements OnInit {
   myarr = ['SHubha', 'Vrush', 'ssayali', 'Vaishnavi'];
-
+  co=null;
   vrush = {
     name: 'vrush',
     age: 16,
     gender: 'f',
   };
+
+
+  recv(e:any){
+this.co=e;
+
+  }
 
   // name=vrush
   // age=16
